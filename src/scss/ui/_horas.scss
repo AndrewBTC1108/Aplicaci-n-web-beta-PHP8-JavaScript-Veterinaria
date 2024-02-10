@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.horas{
+
+    &__hora {
+        &--seleccionada {
+            @extend .horas__hora;
+            background-color: v.$verdeClaro;
+            color: v.$blanco;
+        }
+        &--deshabilitada {
+            @extend .horas__hora;
+            border: 1px solid v.$gris;
+            color: v.$gris;
+            opacity: .5;
+
+            &:hover {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,26 @@
+$verdeClaro: #1ABC9C;
+$grisClaro:  #bdc3c7;
+$blanco: #FFFFFF;
+$cafe: #6E4F32;
+
+// Colores
+$primary: $verdeClaro;
+$secondary: $grisClaro;
+$white: $blanco;
+$dark: $cafe;
+
+// Tipografia
+$fuente-headings: 'Outfit', sans-serif;
+$fuente-textos: 'Outfit', sans-serif;
+
+$headings-font-family: $fuente-headings;
+$font-family-base: $fuente-textos;
+
+// Botones 
+$btn-font-weight: 900;
+$btn-border-radius: 0;
+
+
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

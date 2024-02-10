@@ -1,0 +1,8 @@
+@use '../custom' as *;
+
+.logo {   
+    @include media-breakpoint-up(md) {//agregamos mediaquery para que se muestre despues de que pase lg
+        width: 8rem;
+        height: 8rem;
+    }
+}

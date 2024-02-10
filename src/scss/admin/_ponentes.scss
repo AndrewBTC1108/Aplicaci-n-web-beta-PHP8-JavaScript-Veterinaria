@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.listado-ponentes {
+    @include m.reset-lista;
+    @include m.grid(1, 1rem);
+
+    &__ponente {
+        color: v.$verdeClaro;
+        border: 1px solid v.$verdeClaro;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        text-align: center;
+
+        &:hover {
+            cursor: pointer;
+            background-color: v.$verdeOscuro;
+            color: v.$blanco;
+        }
+    }
+}
